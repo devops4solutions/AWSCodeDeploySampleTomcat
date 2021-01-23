@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Nothing to do in the pre_build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn install
+
+artifacts:
+  files:
+    - '**/LoginWebApp-1.war'
+    - 'appspec.yaml'
+  discard-paths: yes

@@ -1,0 +1,5 @@
+version: 0.0
+os: linux
+files:
+  - source: /target/LoginWebApp-1.war
+    destination: /tmp/
