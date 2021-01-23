@@ -1,5 +1,7 @@
 version: 0.0
 os: linux
-files:
-  - source: /target/LoginWebApp-1.war
-    destination: /tmp/
+hooks:
+  BeforeInstall:
+    - location: install.sh
+      timeout: 300
+      runas: root
